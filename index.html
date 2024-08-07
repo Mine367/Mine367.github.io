@@ -1,162 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-  
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-  
-  h1 {
-  text-shadow: 0 0 3px #FF0000;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe Alura Start</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<div class="header">
-  <h1>Açucar & Magia</h1>
-  <p>Venha nos Conhecer</p>
-</div>
-  
-  <div class="rightcolumn">
-    <div class="card">
-<h2>Sobre a Empresa</h2>
-      <img src="Açucar & Magia.jpg" alt="company logo" style="width:500px;height:200px;">
-      <p>Bem-vindo à "Açúcar & Magia", onde a doçura encontra a inovação em espetinhos gourmet de tirar o fôlego. Somos mais do que uma empresa de doces; somos criadores de experiências culinárias que vão além do comum. Aqui, cada espetinho é uma obra-prima artesanal, cuidadosamente elaborada para encantar e satisfazer os paladares mais exigentes.
-        
-Nossos ingredientes são selecionados com o máximo rigor, garantindo frescor e qualidade excepcionais. Morangos maduros, uvas crocantes, e outras frutas frescas se combinam com chocolates de alto padrão para criar um equilíbrio perfeito de sabores. Além disso, nossa equipe de chefs especializados não apenas prepara espetinhos, mas cria verdadeiras obras de arte culinárias.
-        
-Na "Açúcar & Magia", a cada mordida, você é transportado para um mundo de sabores únicos, texturas harmoniosas e experiências que ficarão gravadas na sua memória gustativa. Se você procura uma maneira de surpreender e encantar seus sentidos, você está no lugar certo. Venha se deliciar com a magia que só o Açúcar & Magia pode proporcionar.</p>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="./img/alurastart logo.png" alt="logo da alura start">
+        <ul class="cabecalho-lista">
+            <li class="cabecalho-lista-item">Escola</li>
+            <li class="cabecalho-lista-item">Estudante</li>
+        </ul>
+    </header>
+    <section class="escola">
+        <div class="escola-div-conteudo">
+            <h2 class="escola-titulo">Sobre a Escola</h2>
+            <p class="escola-texto-um">A Escola Alura foi fundada em 2010 e tem como objetivo ensinar Pensamento Computacional, através do ensino de  Programação.</p>
+            <p class="escola-texto-dois">A turma mais estudiosa e famosa é a Segunda Série A. Nós somos super unidos e a turma favorita por todos os professores e professoras que nos ajudam!</p>
+        </div>
+        <img class="escola-imagem" src="./img/Formula-bro.png" alt="imagem que representa uma professora em sala de aula">
+    </section>
+    <section class="estudante">
+        <h2 class="estudante-titulo">Quem são nossos estudantes?</h2>
+        <div class="estudante-todos">
+        <span></span>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="./img/mulher1.jpg" alt="foto mulher1">
+            <h3 class="estudante-nome">Ana</h3>
+            <a href="https://github.com"><img class="estudante-icone" src="./img/github.png" alt="icone github"></a>
+            <a href="https://linkedin.com"><img class="estudante-icone" src="./img/linkedin.png" alt="icone linkedin"></a>
+            <a href="https://instagram.com"><img class="estudante-icone" src="./img/instagram.png" alt="icone instagram"></a>
+        </div>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="./img/mulher2.jpg" alt="foto mulher2">
+            <h3 class="estudante-nome">Maria</h3>
+            <a href="https://github.com"><img class="estudante-icone" src="./img/github.png" alt="icone github"></a>
+            <a href="https://linkedin.com"><img class="estudante-icone" src="./img/linkedin.png" alt="icone linkedin"></a>
+            <a href="https://instagram.com"><img class="estudante-icone" src="./img/instagram.png" alt="icone instagram"></a>
+        </div>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="./img/homem1.jpg" alt="foto homem1">
+            <h3 class="estudante-nome">João</h3>
+            <a href="https://github.com"><img class="estudante-icone" src="./img/github.png" alt="icone github"></a>
+            <a href="https://linkedin.com"><img class="estudante-icone" src="./img/linkedin.png" alt="icone linkedin"></a>
+            <a href="https://instagram.com"><img class="estudante-icone" src="./img/instagram.png" alt="icone instagram"></a>
+        </div>
     </div>
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>Espeto de Morango com Chocolate</h2>
-      <img src="espetinhos-de-frutas-no-chocolate-5809.jpg" alt="Strawberry skewer with chocolate" Style="width:500px;height:200px;">
-      <p>Imagine um espetinho de morango com chocolate que é uma verdadeira explosão de sabor e prazer para os sentidos. Cada mordida é uma jornada deliciosa que combina a doçura natural e suculenta do morango com a riqueza e a indulgência do chocolate.</p>
-    </div>
-    <div class="card">
-      <h2>Espeto de Uva com Chocolate</h2>
-      <img src="espetinhos de uva no chocolate-5808.jpg" alt="Grape Skewer with chocolate" Style="width:500px;height:200px;">
-      <p>Feche os olhos e imagine-se segurando um espetinho onde a natureza e a indulgência se unem em harmonia.As uvas verdes, com sua aparência de jóias verdes brilhantes, são pequenas esferas de frescor, cada uma escondendo uma explosão de suculência em seu interior.A verdadeira magia acontece quando o chocolate, em sua forma mais sedutora, envolve as uvas. O chocolate, derretido e generoso, cria uma camada suave e luxuosa ao redor de cada uva, adicionando uma doçura exuberante que se mistura com a acidez sutil da fruta.</p>
-    </div>
-    <div class="card">
-      <h2>Espeto de Morango e Uva com Chocolate</h2>
-      <img src="espetinho-de-Morango-e-Uva-5807.jpg" alt="Strawberry and Grape Skewer with chocolate" Style="width:500px;height:200px;">
-      <p>O espetinho combina o doce dos morangos maduros com a refrescância das uvas verdes crocantes. Envolvendo ambas as frutas, uma generosa camada de chocolate adiciona um toque indulgente, criando um contraste perfeito de sabores. É uma delícia visual e gustativa que agrada a todos os sentidos.</p>
-    </div>
-    <div class="card">
-      <h3>Custos do Produtos</h3>
-      <img src="espetinhos-de-frutas-no-chocolate-5809.jpg" alt="Strawberry skewer with chocolate" Style="width:500px;height:200px"><p>R$ 5,00</p>
-      <img src="espetinhos de uva no chocolate-5808.jpg" alt="Grape Skewer with chocolate" Style="width:500px;height:200px"><p>R$ 5,00</p>
-      <img src="espetinho-de-Morango-e-Uva-5807.jpg" alt="Strawberry and Grape Skewer with chocolate" Style="width:500px;height:200px"><p>R$ 6,00</p>
-    </div>
-    <div class="card">
-      <h3>Me siga</h3>
-      <p>Instagram:@espetinhos_gourmet1</p>
-    </div>
-  </div>
-</div>
-    
+    </section>
+    <footer class="rodape">
+        <img class="rodape-imagem"src="./img/alurastart logo.png" alt="logo da alura start">
+    </footer>
 </body>
 </html>
